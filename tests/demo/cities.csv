@@ -1,0 +1,11 @@
+id,name,latitude,longitude,country
+nyc,New York City,40.7128,-74.006,US
+lon,London,51.5074,-0.1278,GB
+tok,Tokyo,35.6895,139.6917,JP
+par,Paris,48.8566,2.3522,FR
+ber,Berlin,52.52,13.405,DE
+syd,Sydney,-33.8688,151.2093,AU
+cai,Cairo,30.0444,31.2357,EG
+rio,Rio de Janeiro,-22.9068,-43.1729,BR
+mos,Moscow,55.7558,37.6173,RU
+mum,Mumbai,19.076,72.8777,IN

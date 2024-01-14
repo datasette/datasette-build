@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Metropolitan Museum of Art",
+        "city_id": "nyc"
+    },
+    {
+        "id": 2,
+        "name": "British Museum",
+        "city_id": "lon"
+    },
+    {
+        "id": 3,
+        "name": "Tokyo National Museum",
+        "city_id": "tok"
+    },
+    {
+        "id": 4,
+        "name": "Louvre Museum",
+        "city_id": "par"
+    },
+    {
+        "id": 5,
+        "name": "Pergamon Museum",
+        "city_id": "ber"
+    },
+    {
+        "id": 6,
+        "name": "Art Gallery of New South Wales",
+        "city_id": "syd"
+    },
+    {
+        "id": 7,
+        "name": "Egyptian Museum",
+        "city_id": "cai"
+    },
+    {
+        "id": 8,
+        "name": "Museu Nacional",
+        "city_id": "rio"
+    },
+    {
+        "id": 9,
+        "name": "State Hermitage Museum",
+        "city_id": "mos"
+    },
+    {
+        "id": 10,
+        "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya",
+        "city_id": "mum"
+    }
+]
