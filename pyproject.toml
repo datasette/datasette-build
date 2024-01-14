@@ -11,7 +11,10 @@ classifiers=[
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "datasette"
+    "click",
+    "sqlite-utils",
+    "PyYAML",
+    "pluggy"
 ]
 
 [project.urls]
@@ -20,11 +23,15 @@ Changelog = "https://github.com/datasette/datasette-build/releases"
 Issues = "https://github.com/datasette/datasette-build/issues"
 CI = "https://github.com/datasette/datasette-build/actions"
 
+[project.scripts]
+datasette-build = "datasette_build.cli:cli"
+
 [project.entry-points.datasette]
-build = "datasette_build"
+build = "datasette_build.plugin"
 
 [project.optional-dependencies]
 test = ["pytest", "pytest-asyncio"]
+datasette = ["datasette"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "strict"
