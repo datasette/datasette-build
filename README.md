@@ -1,30 +1,35 @@
-# Template repository for creating new Datasette plugins
+# datasette-build
 
-This GitHub [template repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) can be used to create a new repository with the skeleton of a Datasette plugin, based on the [datasette-plugin](https://github.com/simonw/datasette-plugin) cookiecutter.
+[![PyPI](https://img.shields.io/pypi/v/datasette-build.svg)](https://pypi.org/project/datasette-build/)
+[![Changelog](https://img.shields.io/github/v/release/datasette/datasette-build?include_prereleases&label=changelog)](https://github.com/datasette/datasette-build/releases)
+[![Tests](https://github.com/datasette/datasette-build/actions/workflows/test.yml/badge.svg)](https://github.com/datasette/datasette-build/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/datasette/datasette-build/blob/main/LICENSE)
 
-Start here: https://github.com/simonw/datasette-plugin-template-repository/generate
+Build a directory full of files into a SQLite database
 
-Call your new repository `datasette-something` - where the `something' describes your new plugin. You can use additional hyphens - examples of valid plugin repository names include:
+## Installation
 
-- `datasette-places-on-a-map`
-- `datasette-emoji`
+Install this plugin in the same environment as Datasette.
+```bash
+datasette install datasette-build
+```
+## Usage
 
-Add a one-line description of your repository, then click "Create repository from template".
+Usage instructions go here.
 
-![Screenshot of the create repository form](https://user-images.githubusercontent.com/9599/131229113-76b3d853-44d2-4ea2-8e29-9b09398b885f.png)
+## Development
 
-Once created, your new repository will execute a GitHub Actions workflow that uses cookiecutter to rewrite the repository to the desired state. This make take 30 seconds or so.
-
-You can see an example of a repository generated using this template here:
-
-- https://github.com/simonw/datasette-plugin-template-repository-demo
-
-## GitHub Actions setup by this repository
-
-The `test.yml` GitHub Actions workflow will run your tests automatically any time you push a change to the repo.
-
-The `publish.yml` Action runs when you create a new GitHub release. It can build and upload your package to [PyPI](https://pypi.org/).
-
-For this to work, you need to create an API token for your PyPI account and add that to your repository as a secret called `PYPI_TOKEN`.
-
-See [Publishing your plugin as a package to PyPI](https://github.com/simonw/datasette-plugin#publishing-your-plugin-as-a-package-to-pypi) for details.
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+```bash
+cd datasette-build
+python3 -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+pip install -e '.[test]'
+```
+To run the tests:
+```bash
+pytest
+```
