@@ -27,7 +27,10 @@ CI = "https://github.com/datasette/datasette-build/actions"
 datasette-build = "datasette_build.cli:cli"
 
 [project.entry-points.datasette]
-build = "datasette_build.plugin"
+build = "datasette_build.datasette_plugin"
+
+[project.entry-points.sqlite_utils]
+build = "datasette_build.sqlite_utils_plugin"
 
 [project.optional-dependencies]
 test = ["pytest", "pytest-asyncio"]
