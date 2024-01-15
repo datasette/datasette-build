@@ -9,13 +9,27 @@ Build a directory full of files into a SQLite database
 
 ## Installation
 
-Install this plugin in the same environment as Datasette.
+Install this tool using `pip` or `pipx`:
+```bash
+pipx install datasette-build
+```
+This will provide the `datasette-build` CLI application.
+
+You can also install it as a Datasette plugin. First [install Datasette](https://docs.datasette.io/en/stable/installation.html), then run:
 ```bash
 datasette install datasette-build
 ```
+This will provide a `datasette build ...` command that works the same as the `datasette-build` CLI application.
+
+Or you can install it as a plugin for [sqlite-utils](https://sqlite-utils.datasette.io/). With that installed, run this:
+```bash
+sqlite-utils install datasette-build
+```
+Now you can access the tool as `sqlite-utils build ...`
+
 ## Usage
 
-Usage instructions go here.
+
 
 ## Development
 
