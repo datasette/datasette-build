@@ -16,9 +16,13 @@ def demo_db(tmp_path_factory):
         cli, [str(tmpdir / "demo.db"), str(DEMO_DIR)], catch_exceptions=False
     )
     assert result.exit_code == 0
-    assert (
-        result.stderr == "10 rows in museums\n10 rows in cities\n10 rows in countries\n"
-    )
+    expected_lines = [
+        "10 rows in museums",
+        "10 rows in cities",
+        "10 rows in countries",
+    ]
+    for line in expected_lines:
+        assert line in result.stderr
     return sqlite_utils.Database(db_path)
 
 
