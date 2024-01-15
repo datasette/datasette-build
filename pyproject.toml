@@ -1,6 +1,6 @@
 [project]
 name = "datasette-build"
-version = "0.1"
+version = "0.1a0"
 description = "Build a directory full of files into a SQLite database"
 readme = "README.md"
 authors = [{name = "Datasette"}]
