@@ -26,21 +26,6 @@ def test_demo_db_tables(demo_db):
     assert set(demo_db.table_names()) == {"cities", "countries", "museums"}
 
 
-"""
-id	name	population
-US	United States	331002651
-GB	United Kingdom	67886011
-JP	Japan	126476461
-FR	France	65273511
-DE	Germany	83783942
-AU	Australia	25499884
-EG	Egypt	102334404
-BR	Brazil	212559417
-RU	Russia	145934462
-IN	India	1380004385
-"""
-
-
 def test_demo_db_tsv(demo_db):
     assert demo_db["countries"].count == 10
     assert demo_db["countries"].columns_dict == {
