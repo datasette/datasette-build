@@ -7,7 +7,7 @@
 
 Build a directory full of files into a SQLite database
 
-> **Early alpha preview**. Everything about this tool is likely to change.
+> ⚠️ **Early alpha preview**. Everything about this tool is likely to change.
 
 ## Installation
 
